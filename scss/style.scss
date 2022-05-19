@@ -1,0 +1,11 @@
+@use 'custom';
+
+@use 'global';
+
+// Components
+@use 'components/navbar';
+@use 'components/footer';
+
+
+//Pages
+@use 'pages/index'
