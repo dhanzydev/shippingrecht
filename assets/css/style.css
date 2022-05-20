@@ -11147,7 +11147,7 @@ body {
 #header {
   padding-top: 100px;
   background-color: #436ACD;
-  padding-bottom: 250px;
+  padding-bottom: 90px;
 }
 #header .opening-text {
   margin-bottom: 50px;
@@ -11234,6 +11234,13 @@ body {
   #header .img-content {
     display: none;
   }
+}
+#header-kuliah {
+  padding-top: 100px;
+  padding-bottom: 90px;
+}
+#header-kuliah .container .header .header-title {
+  color: #436ACD;
 }
 
 /*# sourceMappingURL=style.css.map */

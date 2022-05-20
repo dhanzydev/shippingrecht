@@ -5,7 +5,8 @@
 #header {
     padding-top: 100px;
     background-color: #436ACD;
-    padding-bottom: 250px;
+    padding-bottom: 90px;
+
 
     .opening-text {
         margin-bottom: 50px;
@@ -28,6 +29,7 @@
 
     .card {
         border: none;
+
         img {
             height: 100px;
             width: 100px;
@@ -46,6 +48,7 @@
 #about-us {
     padding-top: 100px;
     padding-bottom: 80px;
+
     .container {
         .row {
             .title-about-us {
@@ -82,14 +85,15 @@
     }
 
     #about-us {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    .container {
-        .title-about-us {
-            margin-top: 40px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+        .container {
+            .title-about-us {
+                margin-top: 40px;
+            }
         }
     }
-}
 }
 
 @media (max-width: 575.98px) {
