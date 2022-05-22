@@ -11305,4 +11305,33 @@ body {
   background-color: #436ACD;
 }
 
+#detail-artikel {
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+#detail-artikel .container .header-article img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+#detail-artikel .container .share {
+  width: 100px;
+}
+#detail-artikel .container .share .social-media-share a img {
+  padding-bottom: 30px;
+  width: 30px;
+}
+
+@media (max-width: 992px) {
+  #detail-artikel .container .share {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  #detail-artikel .container .share .social-media-share a img {
+    padding-bottom: 0;
+    width: 25px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

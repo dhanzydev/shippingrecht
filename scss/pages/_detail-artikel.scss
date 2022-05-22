@@ -1,0 +1,45 @@
+#detail-artikel {
+    padding-top: 70px;
+    padding-bottom: 80px;
+    .container {
+        .header-article {
+            img {
+                width: 100%;
+                height: 500px;
+                object-fit: cover;
+            }
+        }
+
+        .share {
+            width: 100px;
+            .social-media-share {
+                    a {
+                        img {
+                            padding-bottom: 30px;
+                            width: 30px;
+                        }
+                    }
+                }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    #detail-artikel {
+        .container {
+            .share {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                .social-media-share {
+                    a {
+                        img {
+                            padding-bottom: 0;
+                            width: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
