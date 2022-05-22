@@ -11243,4 +11243,56 @@ body {
   color: #436ACD;
 }
 
+.wrapper {
+  width: 100%;
+}
+
+.sidebar {
+  min-width: 230px;
+  max-width: 230px;
+  min-height: 100vh;
+  padding: 1rem;
+  background-color: #436ACD;
+  z-index: 100;
+  transition: all 0.5s ease;
+}
+.sidebar .sidebar-header {
+  margin-bottom: 20px;
+}
+.sidebar .sidebar-header .header {
+  margin-right: 40px;
+}
+.sidebar ul {
+  max-width: 250px;
+  height: 100%;
+}
+.sidebar ul li {
+  background-color: #436ACD;
+  border: 0;
+  padding: 0.5rem 1rem;
+}
+.sidebar ul li a {
+  color: #FFF;
+}
+
+.page-content-wrapper .navbar {
+  padding: 0.5rem 1rem;
+  position: fixed;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.page-content-wrapper .main-content {
+  padding: 1rem;
+}
+
+@media (max-width: 991px) {
+  .wrapper .sidebar {
+    margin-left: -240px;
+  }
+  .wrapper .page-content-wrapper .main-content {
+    padding: 0 2rem;
+    margin-top: 90px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
