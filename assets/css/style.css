@@ -11294,5 +11294,15 @@ body {
     margin-top: 90px;
   }
 }
+.card {
+  border: 0;
+}
+
+.sidebar-artikel .list-category li {
+  background-color: #436ACD;
+}
+.sidebar-artikel .card-add {
+  background-color: #436ACD;
+}
 
 /*# sourceMappingURL=style.css.map */
