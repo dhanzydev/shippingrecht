@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shipping Recht - Kuliah</title>
+    <title>Shipping Recht</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="/node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
@@ -50,78 +50,29 @@
     </nav>
 
     <!-- Content -->
-    <section id="header-kuliah">
+    <section id="header-pertanyaan">
         <div class="container">
-            <div class="header">
-                <h1 class="header-title text-center mb-5">Materi belajar hukum pelayaran, check it out!</h1>
-                <p class="mb-5">Teman-teman dapat mengakses materi kuliah hukum pelayaran secara gratis di sini.
-                    Materi-materinya
-                    dibuat sesederhana mungkin, agar teman-teman semua bisa memahami dengan lebih mudah. Namun memang,
-                    karena penulisan materi kuliahnya memerlukan waktu dan tenaga yang dimiliki sangat terbatas, jadi
-                    materinya akan diunggah secara reguler; dari waktu ke waktu. Semoga bermanfaat!</p>
-                <form action="#" method="post" class="d-flex justify-content-center">
-                    <div class="input-group" style="width: 800px;">
-                        <input type="search" class="form-control" placeholder="Cari Materi">
-                        <span class="input-group-append">
-                            <button class="btn btn-primary border" type="button">
-                                <i class="fa fa-search"></i>
-                            </button>
-                        </span>
-                    </div>
-                </form>
-            </div>
+            <h2>Diskusikan Pertanyaanmu Bersama Kami</h2>
+            <hr>
         </div>
     </section>
 
-    <section id="materi-list">
+    <section id="form">
         <div class="container">
-            <div class="row mb-4 gap-sm-3 gap-3 gap-lg-0">
-                <div class="col-lg-3 col-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <a href="materi.html" class="text-decoration-none text-black fs-2 fw-bold">Lorem Ipsum Dolor Sit Amet.</a>
-                            <p class="card-text mt-4"><small class="text-muted">15 Mei 2022</small></p>
-                        </div>
-                    </div>
+            <form action="#">
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Pertanyaan</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput"
+                        placeholder="Masukkan Pertanyaan">
                 </div>
-                <div class="col-lg-3 col-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <a href="materi.html" class="text-decoration-none text-black fs-2 fw-bold">Lorem Ipsum Dolor Sit Amet.</a>
-                            <p class="card-text mt-4"><small class="text-muted">15 Mei 2022</small></p>
-                        </div>
-                    </div>
+                <div class="form-floating mb-5">
+                    <textarea class="form-control" placeholder="Deskripisikan Pertanyaan Anda" id="deskripsi"
+                        style="height: 100px"></textarea>
                 </div>
-                <div class="col-lg-3 col-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <a href="materi.html" class="text-decoration-none text-black fs-2 fw-bold">Lorem Ipsum Dolor Sit Amet.</a>
-                            <p class="card-text mt-4"><small class="text-muted">15 Mei 2022</small></p>
-                        </div>
-                    </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Kirim</button>
                 </div>
-                <div class="col-lg-3 col-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <a href="materi.html" class="text-decoration-none text-black fs-2 fw-bold">Lorem Ipsum Dolor Sit Amet.</a>
-                            <p class="card-text mt-4"><small class="text-muted">15 Mei 2022</small></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <nav aria-label="Page navigation example" style="margin-top: 300px;">
-                <ul class="pagination justify-content-center">
-                    <li class="page-item disabled">
-                        <a class="page-link">Previous</a>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                        <a class="page-link" href="#">Next</a>
-                    </li>
-                </ul>
-            </nav>
+            </form>
         </div>
     </section>
 
@@ -171,6 +122,14 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#deskripsi'))
+            .catch(error => {
+                console.error(error);
+            });
     </script>
 </body>
 

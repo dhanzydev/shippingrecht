@@ -8,6 +8,16 @@
                 height: 500px;
                 object-fit: cover;
             }
+
+            .category-article {
+                .article-tag {
+                    a {
+                        background-color: rgb(201, 198, 198);
+                        padding: 2px 6px;
+                        color: #FFF;
+                    }
+                }
+            }
         }
 
         .share {

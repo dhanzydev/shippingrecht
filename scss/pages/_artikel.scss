@@ -2,14 +2,30 @@
     border: 0;
 }
 
-.sidebar-artikel {
-    .list-category {
-        li {
-            background-color: #436ACD;
+.content-artikel {
+    .artikel-list {
+        .card {
+            .card-body {
+                .article-tag {
+                    a {
+                        background-color: rgb(201, 198, 198);
+                        padding: 2px 6px;
+                        color: #FFF;
+                    }
+                }
+            }
         }
     }
+}
 
-    .card-add {
-        background-color: #436ACD;
+.sidebar-artikel {
+    .tag-article {
+        .tag-list {
+            a {
+                background-color: rgb(201, 198, 198);
+                padding: 2px 6px;
+                color: #FFF;
+            }
+        }
     }
 }

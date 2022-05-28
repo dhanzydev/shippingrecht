@@ -1,13 +1,7 @@
 @use 'custom';
-
 @use 'global';
-
-// Components
 @use 'components/navbar';
 @use 'components/footer';
-
-
-//Pages
 @use 'pages/index';
 @use 'pages/kuliah';
 @use 'pages/materi';
@@ -16,5 +10,4 @@
 @use 'pages/acara';
 @use 'pages/forum';
 @use 'pages/buat-pertanyaan';
-@use 'pages/sponsor';
-@use 'pages/gabung';
+/*# sourceMappingURL=style.css.map */

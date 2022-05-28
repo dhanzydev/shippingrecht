@@ -11298,11 +11298,16 @@ body {
   border: 0;
 }
 
-.sidebar-artikel .list-category li {
-  background-color: #436ACD;
+.content-artikel .artikel-list .card .card-body .article-tag a {
+  background-color: rgb(201, 198, 198);
+  padding: 2px 6px;
+  color: #FFF;
 }
-.sidebar-artikel .card-add {
-  background-color: #436ACD;
+
+.sidebar-artikel .tag-article .tag-list a {
+  background-color: rgb(201, 198, 198);
+  padding: 2px 6px;
+  color: #FFF;
 }
 
 #detail-artikel {
@@ -11313,6 +11318,11 @@ body {
   width: 100%;
   height: 500px;
   object-fit: cover;
+}
+#detail-artikel .container .header-article .category-article .article-tag a {
+  background-color: rgb(201, 198, 198);
+  padding: 2px 6px;
+  color: #FFF;
 }
 #detail-artikel .container .share {
   width: 100px;
@@ -11332,6 +11342,78 @@ body {
     padding-bottom: 0;
     width: 25px;
   }
+}
+#coming-soon {
+  background-color: #436ACD;
+  min-height: 95vh;
+  padding-top: 100px;
+}
+
+#header-forum {
+  padding-top: 80px;
+  margin-bottom: 50px;
+}
+#header-forum .container .header-forum-content form .input-group {
+  width: 400px;
+}
+
+#question-list {
+  padding-bottom: 100px;
+}
+#question-list .container .card .card-body .content-question .views-question p {
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  #header-forum .container .header-forum-content form {
+    flex-direction: column;
+  }
+  #header-forum .container .header-forum-content form .input-group {
+    width: auto;
+  }
+  #header-forum .container .header-forum-content form a {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 575.98px) {
+  #question-list .container .card .card-body .content-question {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
+  #question-list .container .card .card-body .content-question p {
+    text-align: left;
+    display: inline;
+  }
+  #question-list .container .card .card-body .content-question .views {
+    margin-right: 50px;
+  }
+}
+#header-pertanyaan {
+  padding-top: 60px;
+}
+
+#form {
+  padding-bottom: 256px;
+}
+
+@media (max-width: 991px) {
+  #header-pertanyaan {
+    padding-top: 40px;
+  }
+}
+#sponsor {
+  background-color: #436ACD;
+  padding-top: 80px;
+  padding-bottom: 815px;
+}
+
+#gabung {
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+#gabung-form {
+  margin-top: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
