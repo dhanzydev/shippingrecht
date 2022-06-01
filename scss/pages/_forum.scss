@@ -59,5 +59,71 @@
         padding: 10px 20px;
       }
     }
+
+    .list-pertanyaan {
+      .content-pertanyaan {
+        box-shadow: 2px 3px 15px 3px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+
+        .pertanyaan-numbers {
+          margin-bottom: 10px;
+
+          & span {
+            font-weight: bold;
+          }
+          & p {
+            margin: 0;
+            font-weight: 400;
+            font-size: 0.9rem;
+          }
+        }
+
+        .pertanyaan {
+          a {
+            text-decoration: none;
+
+            > h4 {
+              color: black;
+            }
+          }
+
+          .tags {
+            display: flex;
+            flex-wrap: wrap;
+            .tag {
+              display: block;
+              padding: 5px 10px;
+              margin-right: 10px;
+              margin-bottom: 10px;
+              border-radius: 5px;
+              border: 2px solid rgba(67, 106, 205, 0.85);
+            }
+          }
+        }
+
+        .pertanyaan-details {
+          text-align: right;
+
+          span {
+            font-size: 0.9rem;
+          }
+
+          .logo-user {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
   }
 }
