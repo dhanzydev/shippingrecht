@@ -11349,45 +11349,36 @@ body {
   padding-top: 100px;
 }
 
-#header-forum {
-  padding-top: 80px;
-  margin-bottom: 50px;
+.forum-content {
+  width: 100%;
 }
-#header-forum .container .header-forum-content form .input-group {
-  width: 400px;
+.forum-content .left-sidebar {
+  position: fixed;
+  height: 100%;
+  padding-right: 20px;
+  border-right: 1px solid rgb(200, 200, 200);
+}
+.forum-content .left-sidebar ul.navigation {
+  list-style: none;
+  padding: 0;
+}
+.forum-content .left-sidebar ul.navigation li {
+  width: 100%;
+  padding: 3px 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.forum-content .left-sidebar ul.navigation a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: var(--bs-black);
+}
+.forum-content .left-sidebar ul.navigation :hover {
+  background-color: #436acd;
+  color: white;
 }
 
-#question-list {
-  padding-bottom: 100px;
-}
-#question-list .container .card .card-body .content-question .views-question p {
-  text-align: center;
-}
-
-@media (max-width: 991px) {
-  #header-forum .container .header-forum-content form {
-    flex-direction: column;
-  }
-  #header-forum .container .header-forum-content form .input-group {
-    width: auto;
-  }
-  #header-forum .container .header-forum-content form a {
-    margin-top: 30px;
-  }
-}
-@media (max-width: 575.98px) {
-  #question-list .container .card .card-body .content-question {
-    flex-direction: column-reverse;
-    justify-content: space-around;
-  }
-  #question-list .container .card .card-body .content-question p {
-    text-align: left;
-    display: inline;
-  }
-  #question-list .container .card .card-body .content-question .views {
-    margin-right: 50px;
-  }
-}
 #header-pertanyaan {
   padding-top: 60px;
 }

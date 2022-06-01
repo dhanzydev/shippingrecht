@@ -8,11 +8,16 @@
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link href="/node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet" />
+    <style>
+      body {
+        height: 200vh;
+      }
+    </style>
   </head>
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
       <div class="container">
         <a class="navbar-brand text-light" id="logo-brand" href="../index.html">ShippingRecht</a>
         <button class="navbar-toggler bg-light" id="hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,82 +51,21 @@
       </div>
     </nav>
 
-    <!-- Content -->
-    <section id="header-forum">
-      <div class="container">
-        <div class="header-forum-content">
-          <h1 class="header-title text-center mb-5">Drop your questions here!</h1>
-          <p class="mb-5 text-center">Teman-teman yang punya pertanyaan yang ingin didiskusikan, bisa coba share di sini. Kita coba diskusikan, siapa tau ada pencerahan.</p>
-          <form action="#" method="post" class="d-flex justify-content-between">
-            <div class="input-group">
-              <input type="search" class="form-control" placeholder="Cari Pertanyaan" />
-              <span class="input-group-append">
-                <button class="btn btn-primary border" type="button">
-                  <i class="fa fa-search"></i>
-                </button>
-              </span>
-            </div>
-            <a href="buat-pertanyaan.html" class="btn btn-primary make-question"><span class="fa fa-pencil me-3"></span>Buat Pertanyaan</a>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <section id="question-list">
-      <div class="container">
-        <div class="card mb-3 shadow">
-          <div class="card-body">
-            <div class="d-flex gap-5 content-question">
-              <div class="views-question">
-                <p class="views-count">12</p>
-                <p class="text-muted views">Dilihat</p>
-                <p class="answers-count">5</p>
-                <p class="text-muted answers">Jawaban</p>
-              </div>
-              <div class="question">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              </div>
-            </div>
+    <section id="forum-diskusi">
+      <div class="container-fluid container-lg d-flex forum-content">
+        <div class="position-relative" style="width: 30%">
+          <div class="left-sidebar pt-3">
+            <ul class="navigation">
+              <a href="forum.html"><li>Forum</li></a>
+              <a href=""><li>Tags</li></a>
+              <a href=""><li>Leaderboard</li></a>
+              <a href="artikel.html"><li>Artikel</li></a>
+            </ul>
           </div>
         </div>
+        <div class="forum-main-content"></div>
+        <div class="right-sidebar"></div>
       </div>
-    </section>
-
-    <section id="footer">
-      <!-- Footer -->
-      <footer class="text-center text-lg-start bg-light text-muted mt-5 bg-primary">
-        <!-- Section: Social media -->
-        <section class="p-4" id="social-media">
-          <div class="d-flex justify-content-center container justify-content-lg-between">
-            <div class="me-5 d-none d-lg-block text-white">
-              <span>Terhubung dengan kami di sosial media</span>
-            </div>
-            <!-- Left -->
-
-            <!-- Right -->
-            <div>
-              <a href="" class="me-4 text-decoration-none">
-                <img src="../assets/images/icon-footer/email.png" width="40px" class="img-fluid" alt="" />
-                <a href="" class="me-4 text-decoration-none">
-                  <img src="../assets/images/icon-footer/instagram.png" width="40px" class="img-fluid" alt="" />
-                </a>
-              </a>
-            </div>
-            <!-- Right -->
-          </div>
-          <!-- Left -->
-        </section>
-        <!-- Section: Social media -->
-
-        <!-- Copyright -->
-        <div class="text-center p-4 copyright text-white">
-          © 2022 Copyright:
-          <a class="text-reset fw-bold" href="../index.html">Shipping Recht</a>
-        </div>
-        <!-- Copyright -->
-      </footer>
-      <!-- Footer -->
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>

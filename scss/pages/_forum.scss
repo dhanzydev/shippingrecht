@@ -1,76 +1,35 @@
-#header-forum {
-    padding-top: 80px;
-    margin-bottom: 50px;
+.forum-content {
+  width: 100%;
 
-    .container {
-        .header-forum-content {
-            form {
-                .input-group {
-                    width: 400px;
-                }
-            }
-        }
+  // Left Sidebar
+  .left-sidebar {
+    position: fixed;
+    height: 100%;
+    padding-right: 20px;
+    border-right: 1px solid rgb(200, 200, 200);
+
+    ul.navigation {
+      list-style: none;
+      padding: 0;
+
+      li {
+        width: 100%;
+        padding: 3px 10px;
+        border-radius: 5px;
+        margin: 10px 0;
+        cursor: pointer;
+      }
+
+      & a {
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: var(--bs-black);
+      }
+
+      & :hover {
+        background-color: #436acd;
+        color: white;
+      }
     }
-}
-
-#question-list {
-    padding-bottom: 100px;
-
-    .container {
-        .card {
-            .card-body {
-                .content-question {
-                    .views-question {
-                        p {
-                            text-align: center;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 991px) {
-    #header-forum {
-        .container {
-            .header-forum-content {
-                form {
-                    flex-direction: column;
-
-                    .input-group {
-                        width: auto;
-                    }
-
-                    a {
-                        margin-top: 30px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 575.98px) {
-    #question-list {
-        .container {
-            .card {
-                .card-body {
-                    .content-question {
-                        flex-direction: column-reverse;
-                        justify-content: space-around;
-
-                        p {
-                            text-align: left;
-                            display: inline;
-                        }
-
-                        .views {
-                            margin-right: 50px;
-                        }
-                    }
-                }
-            }
-        }
-    }
+  }
 }
