@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link href="/node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/848830b72b.js" crossorigin="anonymous"></script>
     <style>
       body {
         height: 200vh;
@@ -53,17 +54,34 @@
 
     <section id="forum-diskusi">
       <div class="container-fluid container-lg d-flex forum-content">
-        <div class="position-relative" style="width: 30%">
-          <div class="left-sidebar pt-3">
+        <!-- Left sidebar -->
+        <aside class="position-relative d-none d-md-block">
+          <div class="left-sidebar pt-4">
             <ul class="navigation">
-              <a href="forum.html"><li>Forum</li></a>
+              <a href="forum.html"><li class="active">Forum</li></a>
               <a href=""><li>Tags</li></a>
               <a href=""><li>Leaderboard</li></a>
               <a href="artikel.html"><li>Artikel</li></a>
             </ul>
           </div>
+        </aside>
+
+        <!-- Forum main content -->
+        <div class="forum-main-content pt-4">
+          <div class="content-header d-md-flex justify-content-between mb-3">
+            <h2 class="title">Forum Diskusi</h2>
+            <button class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i> Buat Pertanyaan</button>
+          </div>
+          <p>Tempat berkomunikasi para mahasiswa dengan cara mengajukan atau menjawab sebuah pertanyaan</p>
+          <div class="search-bar">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Cari Pertanyaan" aria-label="Search" />
+              <button class="btn btn-outline-primary d-flex align-items-center" type="submit"><i class="fa-solid fa-magnifying-glass me-2"></i> Telusuri</button>
+            </form>
+          </div>
         </div>
-        <div class="forum-main-content"></div>
+
+        <!-- Right sidebar -->
         <div class="right-sidebar"></div>
       </div>
     </section>

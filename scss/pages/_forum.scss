@@ -2,33 +2,61 @@
   width: 100%;
 
   // Left Sidebar
-  .left-sidebar {
-    position: fixed;
-    height: 100%;
-    padding-right: 20px;
-    border-right: 1px solid rgb(200, 200, 200);
+  aside {
+    width: 180px;
+    margin-right: 20px;
 
-    ul.navigation {
-      list-style: none;
-      padding: 0;
+    .left-sidebar {
+      position: fixed;
+      height: 100%;
+      border-right: 1px solid rgba(0, 0, 0, 0.3);
+      padding-right: 30px;
 
-      li {
-        width: 100%;
-        padding: 3px 10px;
-        border-radius: 5px;
-        margin: 10px 0;
-        cursor: pointer;
+      ul.navigation {
+        list-style: none;
+        padding: 0;
+
+        a {
+          text-decoration: none;
+          font-size: 1.1rem;
+          color: var(--bs-black);
+        }
+
+        li {
+          width: 100%;
+          padding: 3px 10px;
+          border-radius: 5px;
+          margin: 10px 0;
+          cursor: pointer;
+
+          &.active {
+            background-color: var(--bs-primary);
+            color: white;
+          }
+
+          &:hover {
+            background-color: rgba(67, 106, 205, 0.85);
+            color: white;
+          }
+        }
       }
+    }
+  }
 
-      & a {
-        text-decoration: none;
-        font-size: 1.1rem;
-        color: var(--bs-black);
+  // Forum Content
+  .forum-main-content {
+    width: 100%;
+
+    .content-header {
+      & h2 {
+        font-weight: bold;
+        font-size: 2.5rem;
       }
+    }
 
-      & :hover {
-        background-color: #436acd;
-        color: white;
+    .search-bar {
+      button {
+        padding: 10px 20px;
       }
     }
   }
