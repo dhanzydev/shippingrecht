@@ -11359,7 +11359,6 @@ body {
 .forum-content aside .left-sidebar {
   position: fixed;
   height: 100%;
-  border-right: 1px solid rgba(0, 0, 0, 0.3);
   padding-right: 30px;
 }
 .forum-content aside .left-sidebar ul.navigation {
@@ -11401,6 +11400,10 @@ body {
   border-radius: 12px;
 }
 .forum-content .forum-main-content .list-pertanyaan .content-pertanyaan .pertanyaan-numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin-bottom: 10px;
 }
 .forum-content .forum-main-content .list-pertanyaan .content-pertanyaan .pertanyaan-numbers span {
@@ -11449,6 +11452,15 @@ body {
   height: 100%;
 }
 
+@media (max-width: 768px) {
+  .forum-content .forum-main-content .list-pertanyaan .content-pertanyaan .pertanyaan-numbers {
+    flex-direction: row;
+  }
+  .forum-content .forum-main-content .list-pertanyaan .content-pertanyaan .pertanyaan-numbers span {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
 #header-pertanyaan {
   padding-top: 60px;
 }
