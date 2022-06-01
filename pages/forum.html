@@ -7,12 +7,12 @@
     <title>Shipping Recht</title>
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link href="/node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/848830b72b.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
       <div class="container">
         <a class="navbar-brand text-light" id="logo-brand" href="../index.html">ShippingRecht</a>
         <button class="navbar-toggler bg-light" id="hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,45 +46,177 @@
       </div>
     </nav>
 
-    <!-- Content -->
-    <section id="header-forum">
-      <div class="container">
-        <div class="header-forum-content">
-          <h1 class="header-title text-center mb-5">Drop your questions here!</h1>
-          <p class="mb-5 text-center">Teman-teman yang punya pertanyaan yang ingin didiskusikan, bisa coba share di sini. Kita coba diskusikan, siapa tau ada pencerahan.</p>
-          <form action="#" method="post" class="d-flex justify-content-between">
-            <div class="input-group">
-              <input type="search" class="form-control" placeholder="Cari Pertanyaan" />
-              <span class="input-group-append">
-                <button class="btn btn-primary border" type="button">
-                  <i class="fa fa-search"></i>
-                </button>
-              </span>
-            </div>
-            <a href="buat-pertanyaan.html" class="btn btn-primary make-question"><span class="fa fa-pencil me-3"></span>Buat Pertanyaan</a>
-          </form>
-        </div>
-      </div>
-    </section>
+    <section id="forum-diskusi">
+      <div class="container-fluid container-lg d-flex forum-content">
+        <!-- Left sidebar -->
+        <aside class="position-relative d-none d-md-block">
+          <div class="left-sidebar pt-4">
+            <ul class="navigation">
+              <a href="forum.html"><li class="active">Forum</li></a>
+              <a href=""><li>Tags</li></a>
+              <a href=""><li>Leaderboard</li></a>
+              <a href="artikel.html"><li>Artikel</li></a>
+            </ul>
+          </div>
+        </aside>
 
-    <section id="question-list">
-      <div class="container">
-        <div class="card mb-3 shadow">
-          <div class="card-body">
-            <div class="d-flex gap-5 content-question">
-              <div class="views-question">
-                <p class="views-count">12</p>
-                <p class="text-muted views">Dilihat</p>
-                <p class="answers-count">5</p>
-                <p class="text-muted answers">Jawaban</p>
+        <!-- Forum main content -->
+        <div class="forum-main-content pt-4">
+          <!-- Header -->
+          <div class="content-header d-md-flex justify-content-between mb-3">
+            <h2 class="title">Forum Diskusi</h2>
+            <button class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i> Buat Pertanyaan</button>
+          </div>
+          <p>Tempat berkomunikasi para mahasiswa dengan cara mengajukan atau menjawab sebuah pertanyaan</p>
+          <div class="search-bar">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Cari Pertanyaan" aria-label="Search" />
+              <button class="btn btn-outline-primary d-flex align-items-center" type="submit"><i class="fa-solid fa-magnifying-glass me-2"></i> Telusuri</button>
+            </form>
+          </div>
+
+          <!-- List Pertanyaan -->
+          <div class="list-pertanyaan mt-3">
+            <!-- Kotak Pertanyaan -->
+            <div class="content-pertanyaan flex-column flex-md-row d-flex p-md-4 pt-3 pb-3 pe-3 mb-3">
+              <div class="d-flex justify-content-between d-md-block pe-3 ps-3">
+                <div class="pertanyaan-numbers">
+                  <span>1</span>
+                  <p>Suka</p>
+                </div>
+                <div class="pertanyaan-numbers">
+                  <span>1</span>
+                  <p>Jawaban</p>
+                </div>
+                <div class="pertanyaan-numbers">
+                  <span>10</span>
+                  <p>Dilihat</p>
+                </div>
               </div>
-              <div class="question">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-block ms-4">
+                <div class="pertanyaan">
+                  <a href="#"><h4>Bagaimana cara menghitung ruas bangun ruang</h4></a>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis commodi recusandae harum accusamus veniam iste esse reiciendis pariatur ipsum nisi, inventore facere deleniti, tempore non sit amet dolorem dolor
+                    earum!
+                  </p>
+                  <div class="tags">
+                    <a href="#" class="tag"><span>Matematika</span></a>
+                    <a href="#" class="tag"><span>Ilmu Pengetahuan</span></a>
+                    <a href="#" class="tag"><span>Matematika</span></a>
+                    <a href="#" class="tag"><span>Ilmu Pengetahuan</span></a>
+                    <a href="#" class="tag"><span>Matematika</span></a>
+                    <a href="#" class="tag"><span>Ilmu Pengetahuan</span></a>
+                    <a href="#" class="tag"><span>Matematika</span></a>
+                    <a href="#" class="tag"><span>Ilmu Pengetahuan</span></a>
+                  </div>
+                </div>
+                <div class="pertanyaan-details mt-3">
+                  <span class="text-muted">Bertanya 2 jam yang lalu</span>
+                  <div class="d-flex justify-content-end align-items-center mt-1">
+                    <div class="username pb-3 me-2">Jhon Doe</div>
+                    <div class="logo-user">
+                      <img src="../assets/images/about-us.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Kotak Pertanyaan -->
+            <div class="content-pertanyaan flex-column flex-md-row d-flex p-md-4 pt-3 pb-3 pe-3 mb-3">
+              <div class="d-flex justify-content-between d-md-block pe-3 ps-3">
+                <div class="pertanyaan-numbers">
+                  <span>1</span>
+                  <p>Suka</p>
+                </div>
+                <div class="pertanyaan-numbers">
+                  <span>1</span>
+                  <p>Jawaban</p>
+                </div>
+                <div class="pertanyaan-numbers">
+                  <span>10</span>
+                  <p>Dilihat</p>
+                </div>
+              </div>
+              <div class="d-block ms-4">
+                <div class="pertanyaan">
+                  <a href="#"><h4>Bagaimana cara menghitung ruas bangun ruang</h4></a>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis commodi recusandae harum accusamus veniam iste esse reiciendis pariatur ipsum nisi, inventore facere deleniti, tempore non sit amet dolorem dolor
+                    earum!
+                  </p>
+                  <div class="tags">
+                    <a href="#" class="tag"><span>Matematika</span></a>
+                    <a href="#" class="tag"><span>Ilmu Pengetahuan</span></a>
+                    <a href="#" class="tag"><span>Matematika</span></a>
+                    <a href="#" class="tag"><span>Ilmu Pengetahuan</span></a>
+                    <a href="#" class="tag"><span>Matematika</span></a>
+                    <a href="#" class="tag"><span>Ilmu Pengetahuan</span></a>
+                    <a href="#" class="tag"><span>Matematika</span></a>
+                    <a href="#" class="tag"><span>Ilmu Pengetahuan</span></a>
+                  </div>
+                </div>
+                <div class="pertanyaan-details mt-3">
+                  <span class="text-muted">Bertanya 2 jam yang lalu</span>
+                  <div class="d-flex justify-content-end align-items-center mt-1">
+                    <div class="username pb-3 me-2">Jhon Doe</div>
+                    <div class="logo-user">
+                      <img src="../assets/images/about-us.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Kotak Pertanyaan -->
+            <div class="content-pertanyaan flex-column flex-md-row d-flex p-md-4 pt-3 pb-3 pe-3 mb-3">
+              <div class="d-flex justify-content-between d-md-block pe-3 ps-3">
+                <div class="pertanyaan-numbers">
+                  <span>1</span>
+                  <p>Suka</p>
+                </div>
+                <div class="pertanyaan-numbers">
+                  <span>1</span>
+                  <p>Jawaban</p>
+                </div>
+                <div class="pertanyaan-numbers">
+                  <span>10</span>
+                  <p>Dilihat</p>
+                </div>
+              </div>
+              <div class="d-block ms-4">
+                <div class="pertanyaan">
+                  <a href="#"><h4>Bagaimana cara menghitung ruas bangun ruang</h4></a>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis commodi recusandae harum accusamus veniam iste esse reiciendis pariatur ipsum nisi, inventore facere deleniti, tempore non sit amet dolorem dolor
+                    earum!
+                  </p>
+                  <div class="tags">
+                    <a href="#" class="tag"><span>Matematika</span></a>
+                    <a href="#" class="tag"><span>Ilmu Pengetahuan</span></a>
+                    <a href="#" class="tag"><span>Matematika</span></a>
+                    <a href="#" class="tag"><span>Ilmu Pengetahuan</span></a>
+                    <a href="#" class="tag"><span>Matematika</span></a>
+                    <a href="#" class="tag"><span>Ilmu Pengetahuan</span></a>
+                    <a href="#" class="tag"><span>Matematika</span></a>
+                    <a href="#" class="tag"><span>Ilmu Pengetahuan</span></a>
+                  </div>
+                </div>
+                <div class="pertanyaan-details mt-3">
+                  <span class="text-muted">Bertanya 2 jam yang lalu</span>
+                  <div class="d-flex justify-content-end align-items-center mt-1">
+                    <div class="username pb-3 me-2">Jhon Doe</div>
+                    <div class="logo-user">
+                      <img src="../assets/images/about-us.png" alt="" />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- Right sidebar -->
+        <div class="right-sidebar"></div>
       </div>
     </section>
 
@@ -102,10 +234,10 @@
             <!-- Right -->
             <div>
               <a href="" class="me-4 text-decoration-none">
-                <img src="../assets/images/icon-footer/email.png" width="40px" class="img-fluid" alt="" />
-                <a href="" class="me-4 text-decoration-none">
-                  <img src="../assets/images/icon-footer/instagram.png" width="40px" class="img-fluid" alt="" />
-                </a>
+                <img src="/assets/images/icon-footer/email.png" width="40px" class="img-fluid" alt="" />
+              </a>
+              <a href="" class="me-4 text-decoration-none">
+                <img src="/assets/images/icon-footer/instagram.png" width="40px" class="img-fluid" alt="" />
               </a>
             </div>
             <!-- Right -->
@@ -117,7 +249,7 @@
         <!-- Copyright -->
         <div class="text-center p-4 copyright text-white">
           © 2022 Copyright:
-          <a class="text-reset fw-bold" href="../index.html">Shipping Recht</a>
+          <a class="text-reset fw-bold" href="index.html">Shipping Recht</a>
         </div>
         <!-- Copyright -->
       </footer>
