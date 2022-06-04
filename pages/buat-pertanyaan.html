@@ -54,12 +54,51 @@
       </div>
     </section>
 
+    <!-- Modal Tambah Tags -->
+    <div class="modal fade" id="tambah-tags" tabindex="-1" aria-labelledby="tambah-tags-title" style="display: none" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title fw-bold" id="tambah-tags-title">Tambah Tags</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="tags-dipilih">
+              <span class="d-block mb-3"> Tag yang dipilih : </span>
+              <div class="tag">Pelayaran 3</div>
+            </div>
+            <div class="tambah-tags d-flex flex-wrap">
+              <div class="tag">Hukum Tag 1</div>
+              <div class="tag">Tag 2</div>
+              <div class="tag">Pelayaran 3</div>
+              <div class="tag">Tag 4</div>
+              <div class="tag">Tag 5</div>
+              <div class="tag">Ilmu Pengetahuan 6</div>
+              <div class="tag">Tag 7</div>
+              <div class="tag">Tag 8</div>
+              <div class="tag">Hukum Perdata 9</div>
+              <div class="tag">Tag 10</div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" id="save-changes">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form -->
     <section id="form">
       <div class="container">
         <form action="#">
           <div class="mb-3">
-            <label for="formGroupExampleInput" class="form-label">Pertanyaan</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Masukkan Pertanyaan" />
+            <label for="judul-pertanyaan" class="form-label">Judul Pertanyaan</label>
+            <input type="text" class="form-control" id="judul-pertanyaan" placeholder="e.g. Apa yang dimaksud dengan hukum pelayaran?" />
+          </div>
+          <div class="mb-3">
+            <label for="tambah-tags" class="form-label d-block">Tambah Tags</label>
+            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#tambah-tags"><i class="fa-solid fa-plus"></i></button>
           </div>
           <div class="form-floating mb-5">
             <textarea class="form-control" placeholder="Deskripisikan Pertanyaan Anda" id="deskripsi" style="height: 100px"></textarea>

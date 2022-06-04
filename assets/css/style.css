@@ -11480,6 +11480,26 @@ body {
   padding-bottom: 256px;
 }
 
+.tags-dipilih {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.modal-body .tag {
+  margin-bottom: 10px;
+  margin-right: 11px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: var(--bs-primary);
+  color: rgb(255, 255, 255);
+  width: max-content;
+  cursor: pointer;
+}
+.modal-body .tag:hover {
+  background-color: #4c7fff;
+}
+
 @media (max-width: 991px) {
   #header-pertanyaan {
     padding-top: 40px;
