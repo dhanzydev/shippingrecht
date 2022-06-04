@@ -46,67 +46,56 @@
       </div>
     </nav>
 
-    <!-- Content -->
-    <section id="header-pertanyaan">
-      <div class="container">
-        <h2>Diskusikan Pertanyaanmu Bersama Kami</h2>
-        <hr />
-      </div>
-    </section>
+    <section id="forum-diskusi">
+      <div class="container-fluid container-lg d-flex forum-content">
+        <!-- Left sidebar -->
+        <aside class="position-relative d-none d-md-block">
+          <div class="left-sidebar pt-4">
+            <ul class="navigation">
+              <a href="forum.html"><li>Forum</li></a>
+              <a href="tags.html"><li class="active">Tags</li></a>
+              <a href="artikel.html"><li>Artikel</li></a>
+              <a href="acara.html"><li>Acara</li></a>
+            </ul>
+          </div>
+        </aside>
 
-    <!-- Modal Tambah Tags -->
-    <div class="modal fade" id="tambah-tags" tabindex="-1" aria-labelledby="tambah-tags-title" style="display: none" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title fw-bold" id="tambah-tags-title">Tambah Tags</h4>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <!-- Forum main content -->
+        <div class="forum-main-content pt-4">
+          <!-- Header -->
+          <div class="content-header d-md-flex justify-content-between mb-3">
+            <h2 class="title">Tags</h2>
           </div>
-          <div class="modal-body">
-            <div class="tags-dipilih">
-              <span class="d-block mb-3"> Tag yang dipilih : </span>
-              <div class="tag">Pelayaran 3</div>
-            </div>
-            <div class="tambah-tags d-flex flex-wrap">
-              <div class="tag">Hukum Tag 1</div>
-              <div class="tag">Tag 2</div>
-              <div class="tag">Pelayaran 3</div>
-              <div class="tag">Tag 4</div>
-              <div class="tag">Tag 5</div>
-              <div class="tag">Ilmu Pengetahuan 6</div>
-              <div class="tag">Tag 7</div>
-              <div class="tag">Tag 8</div>
-              <div class="tag">Hukum Perdata 9</div>
-              <div class="tag">Tag 10</div>
-            </div>
+          <p>Gunakan tags untuk mencari pertanyaan yang kamu inginkan</p>
+          <div class="search-bar">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Cari Tags" aria-label="Search" />
+              <button class="btn btn-outline-primary d-flex align-items-center" type="submit"><i class="fa-solid fa-magnifying-glass me-2"></i> Telusuri</button>
+            </form>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary" id="save-changes">Save changes</button>
+
+          <div class="row list-tags mt-3 gap-3">
+            <div class="col tag-card">
+              <div class="tag">Hukum</div>
+              <p class="tag-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste accusantium incidunt velit voluptas temporibus cumque explicabo enim iure totam, dicta, sint ipsam quidem nemo esse.</p>
+            </div>
+            <div class="col tag-card">
+              <div class="tag">Hukum Pelayaran</div>
+              <p class="tag-detail">Lorem ipsum dolor sit amet adipisicing elit. Iste accusantium incidunt velit voluptas temporibus cumque explicabo enim iure totam, dicta, sint ipsam quidem nemo esse.</p>
+            </div>
+            <div class="col tag-card">
+              <div class="tag">Hukum Perdata</div>
+              <p class="tag-detail">amet consectetur adipisicing elit. Iste accusantium incidunt velit voluptas temporibus cumque explicabo enim iure totam, dicta, sint ipsam quidem nemo esse.</p>
+            </div>
+            <div class="col tag-card">
+              <div class="tag">HAM</div>
+              <p class="tag-detail">Lorem ipsum dolor sit adipisicing elit. Iste accusantium incidunt velit voluptas temporibus cumque explicabo enim iure totam, dicta, sint ipsam quidem nemo esse.</p>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Form -->
-    <section id="form">
-      <div class="container">
-        <form action="#">
-          <div class="mb-3">
-            <label for="judul-pertanyaan" class="form-label">Judul Pertanyaan</label>
-            <input type="text" class="form-control" id="judul-pertanyaan" placeholder="e.g. Apa yang dimaksud dengan hukum pelayaran?" />
-          </div>
-          <div class="mb-3">
-            <label for="tambah-tags" class="form-label d-block">Tambah Tags</label>
-            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#tambah-tags"><i class="fa-solid fa-plus"></i></button>
-          </div>
-          <div class="form-floating mb-5">
-            <textarea class="form-control" placeholder="Deskripisikan Pertanyaan Anda" id="deskripsi" style="height: 100px"></textarea>
-          </div>
-          <div class="text-center">
-            <button type="submit" class="btn btn-primary">Kirim</button>
-          </div>
-        </form>
+        <!-- Right sidebar -->
+        <div class="right-sidebar"></div>
       </div>
     </section>
 
@@ -124,10 +113,10 @@
             <!-- Right -->
             <div>
               <a href="" class="me-4 text-decoration-none">
-                <img src="../assets/images/icon-footer/email.png" width="40px" class="img-fluid" alt="" />
-                <a href="" class="me-4 text-decoration-none">
-                  <img src="../assets/images/icon-footer/instagram.png" width="40px" class="img-fluid" alt="" />
-                </a>
+                <img src="/assets/images/icon-footer/email.png" width="40px" class="img-fluid" alt="" />
+              </a>
+              <a href="" class="me-4 text-decoration-none">
+                <img src="/assets/images/icon-footer/instagram.png" width="40px" class="img-fluid" alt="" />
               </a>
             </div>
             <!-- Right -->
@@ -139,7 +128,7 @@
         <!-- Copyright -->
         <div class="text-center p-4 copyright text-white">
           © 2022 Copyright:
-          <a class="text-reset fw-bold" href="../index.html">Shipping Recht</a>
+          <a class="text-reset fw-bold" href="index.html">Shipping Recht</a>
         </div>
         <!-- Copyright -->
       </footer>
@@ -151,12 +140,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
-    </script>
-    <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
-    <script>
-      ClassicEditor.create(document.querySelector("#deskripsi")).catch((error) => {
-        console.error(error);
-      });
     </script>
   </body>
 </html>
