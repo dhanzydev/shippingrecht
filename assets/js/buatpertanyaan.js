@@ -9,38 +9,14 @@ formPertanyaan.addEventListener("submit", (e) => {
   console.log(deskripsi.value);
 });
 
-// Pilih Tags
-const modalTambahTag = document.querySelector(".modal");
-const tagDipilihContainer = document.querySelector(".tag-terpilih-container");
+$("#tambah-tags").tagsInput({
+  // Validation
+  minChars: 3,
+  limit: 10,
+  unique: true,
 
-let tagDipilih = [];
-
-modalTambahTag.addEventListener("click", (e) => {
-  const target = e.target;
-  if (target.classList.contains("tag")) {
-    pilihTag(target);
-    target.classList.toggle("tag-dipilih");
-    console.log(tagDipilih);
-  }
-
-  if (e.target.id === "save-changes") {
-    tambahTag();
-    $("#tambah-tags").modal("hide");
-  }
+  // Auto Completion
+  autocomplete: {
+    source: ["Hukum Pelayaran", "Hukum", "Ilmu Pengetahuan"],
+  },
 });
-
-function pilihTag(target) {
-  const isSameValue = tagDipilih.find((element) => element == target.textContent);
-
-  if (isSameValue) {
-    const filteredTag = tagDipilih.filter((element) => element !== isSameValue);
-    tagDipilih = filteredTag;
-  } else {
-    tagDipilih.push(target.textContent);
-  }
-}
-
-function tambahTag() {
-  const tags = tagDipilih.map((tag) => `<span class="tag-terpilih">${tag}</span>`).join("");
-  tagDipilihContainer.innerHTML = tags;
-}
