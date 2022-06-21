@@ -11327,6 +11327,20 @@ body {
   background-position: center;
 }
 
+#list-artikel .card-artikel {
+  width: 20rem;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+#list-artikel .card-artikel .image-card-artikel img {
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  #list-artikel .card-artikel {
+    width: 100%;
+  }
+}
 #detail-artikel {
   padding-top: 70px;
   padding-bottom: 80px;
