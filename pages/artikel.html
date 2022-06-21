@@ -46,103 +46,103 @@
       </div>
     </nav>
 
-    <!-- Content -->
-    <section id="header-kuliah">
-      <div class="container">
-        <div class="header">
-          <h1 class="header-title text-center">Artikel</h1>
-          <p class="text-center">Isu terkini mengenai hukum dan industri pelayaran.</p>
-        </div>
+    <div class="header-list-artikel text-center mt-5 mb-4 mb-lg-5">
+      <h1>Artikel</h1>
+      <p>Isu terkini mengenai hukum dan industri pelayaran.</p>
+    </div>
+
+    <!-- Featured Artikel -->
+    <section id="featured-artikel" class="container d-flex justify-content-center flex-wrap flex-md-nowrap mb-3">
+      <div class="image-featured me-4 mb-3">
+        <img src="../assets/images/artikel-1.png" alt="Artikel" class="img-fluid" />
+      </div>
+      <div class="detail-featured">
+        <a href="#" class="author-detail-featured text-decoration-none d-block">Author</a>
+        <span class="tanggal-detail-featured text-muted">Maret 05, 2022</span>
+        <h2 class="judul-detail-featured fw-bold">Pentingnya Daya Saing Produk RI Hadapi Mahalnya Ekspor</h2>
+        <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem repudiandae totam odit cumque modi, nisi sed suscipit tempora nulla quasi!</p>
+        <button class="btn btn-primary">Baca Selengkapnya</button>
       </div>
     </section>
 
-    <section id="artikel-list">
-      <div class="container">
-        <div class="content-artikel">
-          <div class="row">
-            <div class="col-lg-3">
-              <!-- Sidebar Artikel -->
-              <div class="sidebar-artikel pb-5 px-3">
-                <form action="#" method="post" class="d-flex justify-content-center mb-5">
-                  <div class="input-group">
-                    <input type="search" class="form-control" placeholder="Cari Judul Artikel" />
-                    <span class="input-group-append">
-                      <button class="btn btn-primary border" type="subm">
-                        <i class="fa fa-search"></i>
-                      </button>
-                    </span>
-                  </div>
-                </form>
-                <ul class="list-group list-category mt-5 mb-5">
-                  <li class="list-group-item"><a href="" class="text-decoration-none text-dark">Kategori Artikel </a><span class="ms-3 text-dark">(1)</span></li>
-                  <li class="list-group-item"><a href="" class="text-decoration-none text-dark">Kategori Artikel </a><span class="ms-3 text-dark">(1)</span></li>
-                  <li class="list-group-item"><a href="" class="text-decoration-none text-dark">Kategori Artikel </a><span class="ms-3 text-dark">(1)</span></li>
-                  <li class="list-group-item"><a href="" class="text-decoration-none text-dark">Kategori Artikel </a><span class="ms-3 text-dark">(1)</span></li>
-                  <li class="list-group-item"><a href="" class="text-decoration-none text-dark">Kategori Artikel </a><span class="ms-3 text-dark">(1)</span></li>
-                </ul>
-
-                <!-- Make Tag Article -->
-
-                <div class="tag-article mb-5">
-                  <h6 class="text-dark fw-normal">Tag Artikel</h6>
-                  <div class="tag-list">
-                    <a href="" class="text-decoration-none rounded text-dark fw-light border d-inline-block mb-2">Apa aja</a>
-                    <a href="" class="text-decoration-none rounded text-dark fw-light border d-inline-block mb-2">Tag 1</a>
-                    <a href="" class="text-decoration-none rounded text-dark fw-light border d-inline-block mb-2">Tag 1</a>
-                    <a href="" class="text-decoration-none rounded text-dark fw-light border d-inline-block mb-2">Tag 1</a>
-                    <a href="" class="text-decoration-none rounded text-dark fw-light border d-inline-block mb-2">Tag 1</a>
-                    <a href="" class="text-decoration-none rounded text-dark fw-light border d-inline-block mb-2">Tag 1</a>
-                  </div>
-                </div>
-
-                <div class="card card-add">
-                  <div class="card-body border">
-                    <p class="card-text text-dark">
-                      Jika ada teman-teman yang ingin berkontribusi untuk ikut menulis mengenai isu hukum pelayaran atau isu-isu lain yang terkait dengan industri pelayaran, sangat dipersilahkan. <br />
-                      <a href="#" class="btn btn-primary mt-3">Hubungi Kami</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- List Artikel -->
-            <div class="col-lg-9">
-              <div class="artikel-list ps-0">
-                <div class="card mb-3">
-                  <img src="../assets/images/sampul/emily-finch-GRzuYBtec4U-unsplash.jpg" style="object-fit: cover" class="card-img-top" width="100%" height="400px" alt="" />
-                  <div class="card-body p-0">
-                    <h3 class="card-title mt-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                    <p class="card-text">
-                      <small class="text-muted">oleh <span class="fw-bold me-4">Admin</span> 15 Mei 2022</small>
-                    </p>
-                    <div class="card-text article-tag">
-                      <small class="text-muted">
-                        <a href="" class="text-decoration-none rounded text-dark fw-light border d-inline-block mb-2">Apa aja</a>
-                        <a href="" class="text-decoration-none rounded text-dark fw-light border d-inline-block mb-2">Tag 1</a>
-                      </small>
-                    </div>
-                    <a href="artikel-detail.html" class="btn btn-primary mt-5">Baca Selengkapnya <span class="fa fa-arrow-circle-right"></span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <!-- List Artikel -->
+    <section id="list-artikel" class="container">
+      <div class="row">
+        <!-- Card Artikel -->
+        <div class="card-artikel col-md-4 col-lg-3">
+          <div class="image-card-artikel mb-3">
+            <img src="../assets/images/artikel-3.png" alt="Artikel" class="img-fluid" />
+          </div>
+          <div class="card-detail-artikel">
+            <a href="#" class="author-card-artikel text-decoration-none d-block">Author</a>
+            <span class="tanggal-card-artikel text-muted">Juni 26, 2022</span>
+            <h5 class="judul-card-artikel mb-3">Pentingnya Sektor Pelayaran Bagi Industri Galangan Kapal</h5>
+            <button class="btn btn-primary">Baca Selengkapnya</button>
           </div>
         </div>
-        <nav aria-label="Page navigation example" style="margin-top: 300px">
-          <ul class="pagination justify-content-center">
-            <li class="page-item disabled">
-              <a class="page-link">Previous</a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-              <a class="page-link" href="#">Next</a>
-            </li>
-          </ul>
-        </nav>
+        <!-- Card Artikel -->
+        <div class="card-artikel col-md-4 col-lg-3">
+          <div class="image-card-artikel mb-3">
+            <img src="../assets/images/artikel-3.png" alt="Artikel" class="img-fluid" />
+          </div>
+          <div class="card-detail-artikel">
+            <a href="#" class="author-card-artikel text-decoration-none d-block">Author</a>
+            <span class="tanggal-card-artikel text-muted">Juni 26, 2022</span>
+            <h5 class="judul-card-artikel mb-3">Pentingnya Sektor Pelayaran Bagi Industri Galangan Kapal</h5>
+            <button class="btn btn-primary">Baca Selengkapnya</button>
+          </div>
+        </div>
+        <!-- Card Artikel -->
+        <div class="card-artikel col-md-4 col-lg-3">
+          <div class="image-card-artikel mb-3">
+            <img src="../assets/images/artikel-3.png" alt="Artikel" class="img-fluid" />
+          </div>
+          <div class="card-detail-artikel">
+            <a href="#" class="author-card-artikel text-decoration-none d-block">Author</a>
+            <span class="tanggal-card-artikel text-muted">Juni 26, 2022</span>
+            <h5 class="judul-card-artikel mb-3">Pentingnya Sektor Pelayaran Bagi Industri Galangan Kapal</h5>
+            <button class="btn btn-primary">Baca Selengkapnya</button>
+          </div>
+        </div>
+        <!-- Card Artikel -->
+        <div class="card-artikel col-md-4 col-lg-3">
+          <div class="image-card-artikel mb-3">
+            <img src="../assets/images/artikel-3.png" alt="Artikel" class="img-fluid" />
+          </div>
+          <div class="card-detail-artikel">
+            <a href="#" class="author-card-artikel text-decoration-none d-block">Author</a>
+            <span class="tanggal-card-artikel text-muted">Juni 26, 2022</span>
+            <h5 class="judul-card-artikel mb-3">Pentingnya Sektor Pelayaran Bagi Industri Galangan Kapal</h5>
+            <button class="btn btn-primary">Baca Selengkapnya</button>
+          </div>
+        </div>
+        <!-- Card Artikel -->
+        <div class="card-artikel col-md-4 col-lg-3">
+          <div class="image-card-artikel mb-3">
+            <img src="../assets/images/artikel-3.png" alt="Artikel" class="img-fluid" />
+          </div>
+          <div class="card-detail-artikel">
+            <a href="#" class="author-card-artikel text-decoration-none d-block">Author</a>
+            <span class="tanggal-card-artikel text-muted">Juni 26, 2022</span>
+            <h5 class="judul-card-artikel mb-3">Pentingnya Sektor Pelayaran Bagi Industri Galangan Kapal</h5>
+            <button class="btn btn-primary">Baca Selengkapnya</button>
+          </div>
+        </div>
       </div>
     </section>
+
+    <!-- Pagination -->
+    <div class="list-artikel-pagination d-flex justify-content-center mt-3">
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>
+    </div>
 
     <section id="footer">
       <!-- Footer -->
