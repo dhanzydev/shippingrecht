@@ -11328,9 +11328,7 @@ body {
 }
 
 #list-artikel .card-artikel {
-  width: 20rem;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 #list-artikel .card-artikel .image-card-artikel img {
   border-radius: 10px;
