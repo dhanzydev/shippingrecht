@@ -11399,38 +11399,11 @@ body {
   box-shadow: 2px 3px 15px 3px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
 }
-.forum-content .forum-main-content .list-pertanyaan .content-pertanyaan .pertanyaan-numbers {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 10px;
-}
-.forum-content .forum-main-content .list-pertanyaan .content-pertanyaan .pertanyaan-numbers span {
-  font-weight: bold;
-}
-.forum-content .forum-main-content .list-pertanyaan .content-pertanyaan .pertanyaan-numbers p {
-  margin: 0;
-  font-weight: 400;
-  font-size: 0.9rem;
-}
 .forum-content .forum-main-content .list-pertanyaan .content-pertanyaan .pertanyaan a {
   text-decoration: none;
 }
 .forum-content .forum-main-content .list-pertanyaan .content-pertanyaan .pertanyaan a > h4 {
   color: black;
-}
-.forum-content .forum-main-content .list-pertanyaan .content-pertanyaan .pertanyaan .tags {
-  display: flex;
-  flex-wrap: wrap;
-}
-.forum-content .forum-main-content .list-pertanyaan .content-pertanyaan .pertanyaan .tags .tag {
-  display: block;
-  padding: 5px 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  border: 2px solid rgba(67, 106, 205, 0.85);
 }
 .forum-content .forum-main-content .list-tags {
   padding: 0 10px;
@@ -11461,6 +11434,36 @@ body {
 .forum-content .forum-main-content .list-tags .tag-card:hover {
   transform: translateY(-5px);
   box-shadow: 0px 3px 15px 3px rgba(0, 0, 0, 0.1);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tags .tag {
+  text-decoration: none;
+  display: block;
+  padding: 5px 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 2px solid rgba(67, 106, 205, 0.85);
+}
+
+.pertanyaan-numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.pertanyaan-numbers span {
+  font-weight: bold;
+}
+.pertanyaan-numbers p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 768px) {
@@ -11502,6 +11505,15 @@ body {
 
 #gabung-form {
   margin-top: 50px;
+}
+
+.jawaban-pertanyaan .jawaban {
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 20px;
+}
+.jawaban-pertanyaan .jawaban p {
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
