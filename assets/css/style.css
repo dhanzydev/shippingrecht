@@ -11325,6 +11325,7 @@ body {
   background-color: rgba(0, 0, 0, 0.1);
 }
 #list-artikel .sidebar-artikel {
+  max-width: 250px;
   margin-right: 50px;
 }
 #list-artikel .sidebar-artikel .navigasi-artikel {
@@ -11362,6 +11363,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  #list-artikel .sidebar-artikel {
+    max-width: 200px;
+  }
   #list-artikel .card-artikel {
     width: 100%;
   }
