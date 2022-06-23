@@ -46,93 +46,118 @@
       </div>
     </nav>
 
-    <div class="header-list-artikel text-center mt-5 mb-4 mb-lg-5">
-      <h1>Artikel</h1>
-      <p>Isu terkini mengenai hukum dan industri pelayaran.</p>
-    </div>
-
-    <!-- Featured Artikel -->
-    <section id="featured-artikel" class="container d-flex justify-content-center flex-wrap flex-md-nowrap mb-3">
-      <div class="image-featured me-4 mb-3">
-        <img src="../assets/images/artikel-1.png" alt="Artikel" class="img-fluid" />
-      </div>
-      <div class="detail-featured">
-        <a href="#" class="author-detail-featured text-decoration-none d-block">Author</a>
-        <span class="tanggal-detail-featured text-muted">Maret 05, 2022</span>
-        <h2 class="judul-detail-featured fw-bold">Pentingnya Daya Saing Produk RI Hadapi Mahalnya Ekspor</h2>
-        <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem repudiandae totam odit cumque modi, nisi sed suscipit tempora nulla quasi!</p>
-        <button class="btn btn-primary">Baca Selengkapnya</button>
+    <!-- Jumbotron -->
+    <section id="jumbotron-artikel">
+      <div class="container d-flex pt-5 pb-5">
+        <div class="detail-jumbotron">
+          <h1 class="fw-bold">Artikel</h1>
+          <h4 class="text-white-50">Isu terkini mengenai hukum dan industri pelayaran.</h4>
+        </div>
+        <div class="image-jumbotron">
+          <img src="../assets/images/artikel-1.png" alt="Artikel" class="img-fluid" />
+        </div>
       </div>
     </section>
 
     <!-- List Artikel -->
-    <section id="list-artikel" class="container">
-      <div class="row">
-        <!-- Card Artikel -->
-        <div class="card-artikel col-md-4 col-lg-3">
-          <div class="image-card-artikel mb-3">
-            <img src="../assets/images/artikel-3.png" alt="Artikel" class="img-fluid" />
+    <section id="list-artikel">
+      <div class="container d-flex">
+        <!-- Sidebar -->
+        <div class="sidebar-artikel">
+          <div class="search-artikel d-flex mb-3">
+            <input type="text" placeholder="Search.." class="search-bar" />
+            <button class="btn btn-search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
           </div>
-          <div class="card-detail-artikel">
-            <a href="#" class="author-card-artikel text-decoration-none d-block">Author</a>
-            <span class="tanggal-card-artikel text-muted">Juni 26, 2022</span>
-            <h5 class="judul-card-artikel mb-3">Pentingnya Sektor Pelayaran Bagi Industri Galangan Kapal</h5>
-            <button class="btn btn-primary">Baca Selengkapnya</button>
-          </div>
-        </div>
-        <!-- Card Artikel -->
-        <div class="card-artikel col-md-4 col-lg-3">
-          <div class="image-card-artikel mb-3">
-            <img src="../assets/images/artikel-3.png" alt="Artikel" class="img-fluid" />
-          </div>
-          <div class="card-detail-artikel">
-            <a href="#" class="author-card-artikel text-decoration-none d-block">Author</a>
-            <span class="tanggal-card-artikel text-muted">Juni 26, 2022</span>
-            <h5 class="judul-card-artikel mb-3">Pentingnya Sektor Pelayaran Bagi Industri Galangan Kapal</h5>
-            <button class="btn btn-primary">Baca Selengkapnya</button>
-          </div>
-        </div>
-        <!-- Card Artikel -->
-        <div class="card-artikel col-md-4 col-lg-3">
-          <div class="image-card-artikel mb-3">
-            <img src="../assets/images/artikel-3.png" alt="Artikel" class="img-fluid" />
-          </div>
-          <div class="card-detail-artikel">
-            <a href="#" class="author-card-artikel text-decoration-none d-block">Author</a>
-            <span class="tanggal-card-artikel text-muted">Juni 26, 2022</span>
-            <h5 class="judul-card-artikel mb-3">Pentingnya Sektor Pelayaran Bagi Industri Galangan Kapal</h5>
-            <button class="btn btn-primary">Baca Selengkapnya</button>
+          <ul class="navigasi-artikel" id="navigasi-artikel">
+            <h5 class="fw-bold">Kategori Artikel</h5>
+            <li class="nav-link-artikel active">Kategori 1</li>
+            <li class="nav-link-artikel">Kategori 2</li>
+            <li class="nav-link-artikel">Kategori 3</li>
+            <li class="nav-link-artikel">Kategori 4</li>
+            <li class="nav-link-artikel">Kategori 5</li>
+
+            <h5 class="fw-bold">Daftar Tag</h5>
+            <li class="nav-link-artikel">Tag 1</li>
+            <li class="nav-link-artikel">Tag 2</li>
+            <li class="nav-link-artikel">Tag 3</li>
+            <li class="nav-link-artikel">Tag 4</li>
+            <li class="nav-link-artikel">Tag 5</li>
+          </ul>
+          <div class="card-gabung">
+            <p>Jika ada teman-teman yang ingin berkontribusi untuk ikut menulis mengenai isu hukum pelayaran atau isu-isu lain yang terkait dengan industri pelayaran, sangat dipersilahkan.</p>
+            <button class="btn btn-primary">Gabung</button>
           </div>
         </div>
-        <!-- Card Artikel -->
-        <div class="card-artikel col-md-4 col-lg-3">
-          <div class="image-card-artikel mb-3">
-            <img src="../assets/images/artikel-3.png" alt="Artikel" class="img-fluid" />
+        <!-- List Artikel -->
+        <div class="list-artikel row">
+          <!-- Card Artikel -->
+          <div class="card-artikel col-md-6 col-lg-4">
+            <div class="image-card-artikel mb-3">
+              <img src="../assets/images/artikel-3.png" alt="Artikel" class="img-fluid" />
+            </div>
+            <div class="card-detail-artikel">
+              <a href="#" class="author-card-artikel text-decoration-none d-block">Author</a>
+              <span class="tanggal-card-artikel text-muted">Juni 26, 2022</span>
+              <h5 class="judul-card-artikel mb-3">Pentingnya Sektor Pelayaran Bagi Industri Galangan Kapal</h5>
+              <button class="btn btn-primary">Baca Selengkapnya</button>
+            </div>
           </div>
-          <div class="card-detail-artikel">
-            <a href="#" class="author-card-artikel text-decoration-none d-block">Author</a>
-            <span class="tanggal-card-artikel text-muted">Juni 26, 2022</span>
-            <h5 class="judul-card-artikel mb-3">Pentingnya Sektor Pelayaran Bagi Industri Galangan Kapal</h5>
-            <button class="btn btn-primary">Baca Selengkapnya</button>
+          <!-- Card Artikel -->
+          <div class="card-artikel col-md-6 col-lg-4">
+            <div class="image-card-artikel mb-3">
+              <img src="../assets/images/artikel-3.png" alt="Artikel" class="img-fluid" />
+            </div>
+            <div class="card-detail-artikel">
+              <a href="#" class="author-card-artikel text-decoration-none d-block">Author</a>
+              <span class="tanggal-card-artikel text-muted">Juni 26, 2022</span>
+              <h5 class="judul-card-artikel mb-3">Pentingnya Sektor Pelayaran Bagi Industri Galangan Kapal</h5>
+              <button class="btn btn-primary">Baca Selengkapnya</button>
+            </div>
           </div>
-        </div>
-        <!-- Card Artikel -->
-        <div class="card-artikel col-md-4 col-lg-3">
-          <div class="image-card-artikel mb-3">
-            <img src="../assets/images/artikel-3.png" alt="Artikel" class="img-fluid" />
+          <!-- Card Artikel -->
+          <div class="card-artikel col-md-6 col-lg-4">
+            <div class="image-card-artikel mb-3">
+              <img src="../assets/images/artikel-3.png" alt="Artikel" class="img-fluid" />
+            </div>
+            <div class="card-detail-artikel">
+              <a href="#" class="author-card-artikel text-decoration-none d-block">Author</a>
+              <span class="tanggal-card-artikel text-muted">Juni 26, 2022</span>
+              <h5 class="judul-card-artikel mb-3">Pentingnya Sektor Pelayaran Bagi Industri Galangan Kapal</h5>
+              <button class="btn btn-primary">Baca Selengkapnya</button>
+            </div>
           </div>
-          <div class="card-detail-artikel">
-            <a href="#" class="author-card-artikel text-decoration-none d-block">Author</a>
-            <span class="tanggal-card-artikel text-muted">Juni 26, 2022</span>
-            <h5 class="judul-card-artikel mb-3">Pentingnya Sektor Pelayaran Bagi Industri Galangan Kapal</h5>
-            <button class="btn btn-primary">Baca Selengkapnya</button>
+          <!-- Card Artikel -->
+          <div class="card-artikel col-md-6 col-lg-4">
+            <div class="image-card-artikel mb-3">
+              <img src="../assets/images/artikel-3.png" alt="Artikel" class="img-fluid" />
+            </div>
+            <div class="card-detail-artikel">
+              <a href="#" class="author-card-artikel text-decoration-none d-block">Author</a>
+              <span class="tanggal-card-artikel text-muted">Juni 26, 2022</span>
+              <h5 class="judul-card-artikel mb-3">Pentingnya Sektor Pelayaran Bagi Industri Galangan Kapal</h5>
+              <button class="btn btn-primary">Baca Selengkapnya</button>
+            </div>
+          </div>
+          <!-- Card Artikel -->
+          <div class="card-artikel col-md-6 col-lg-4">
+            <div class="image-card-artikel mb-3">
+              <img src="../assets/images/artikel-3.png" alt="Artikel" class="img-fluid" />
+            </div>
+            <div class="card-detail-artikel">
+              <a href="#" class="author-card-artikel text-decoration-none d-block">Author</a>
+              <span class="tanggal-card-artikel text-muted">Juni 26, 2022</span>
+              <h5 class="judul-card-artikel mb-3">Pentingnya Sektor Pelayaran Bagi Industri Galangan Kapal</h5>
+              <button class="btn btn-primary">Baca Selengkapnya</button>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Pagination -->
-    <div class="list-artikel-pagination d-flex justify-content-center mt-3">
+    <div class="list-artikel-pagination d-flex justify-content-center mt-5">
       <nav aria-label="Page navigation example">
         <ul class="pagination">
           <li class="page-item"><a class="page-link" href="#">Previous</a></li>
@@ -183,6 +208,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../assets/js/artikel.js"></script>
     <script>
       AOS.init();
     </script>
