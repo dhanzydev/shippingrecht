@@ -11328,6 +11328,9 @@ body {
   max-width: 250px;
   margin-right: 50px;
 }
+#list-artikel .sidebar-artikel h5 {
+  margin-bottom: 15px;
+}
 #list-artikel .sidebar-artikel .navigasi-artikel {
   padding: 0;
 }
@@ -11364,7 +11367,21 @@ body {
 
 @media (max-width: 768px) {
   #list-artikel .sidebar-artikel {
-    max-width: 200px;
+    margin-left: 10px;
+    max-width: 100%;
+    margin-right: 0;
+  }
+  #list-artikel .sidebar-artikel .search-artikel {
+    width: 100%;
+  }
+  #list-artikel .sidebar-artikel .search-artikel input {
+    width: 100%;
+  }
+  #list-artikel .sidebar-artikel .search-artikel button {
+    margin-right: 30px;
+  }
+  #list-artikel .sidebar-artikel .card-gabung {
+    margin-top: 20px;
   }
   #list-artikel .card-artikel {
     width: 100%;
@@ -11479,7 +11496,7 @@ body {
   margin-bottom: 10px;
   padding: 5px 10px;
   border-radius: 5px;
-  background-color: #6892ff;
+  background-color: var(--bs-primary);
   color: rgb(255, 255, 255);
   width: max-content;
   cursor: default;
@@ -11506,8 +11523,13 @@ body {
   padding: 5px 10px;
   margin-right: 10px;
   margin-bottom: 10px;
+  background-color: var(--bs-primary);
+  color: rgb(255, 255, 255);
   border-radius: 5px;
-  border: 2px solid rgba(67, 106, 205, 0.85);
+  cursor: pointer;
+}
+.tags .tag:hover {
+  background-color: #6892ff;
 }
 
 .pertanyaan-numbers {
