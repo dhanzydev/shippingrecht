@@ -31,8 +31,11 @@
   }
 
   .sidebar-artikel {
+    max-width: 250px;
     margin-right: 50px;
-
+    h5 {
+      margin-bottom: 15px;
+    }
     .navigasi-artikel {
       padding: 0;
       .nav-link-artikel {
@@ -77,6 +80,23 @@
 
 @media (max-width: 768px) {
   #list-artikel {
+    .sidebar-artikel {
+      margin-left: 10px;
+      max-width: 100%;
+      margin-right: 0;
+      .search-artikel {
+        width: 100%;
+        input {
+          width: 100%;
+        }
+        button {
+          margin-right: 30px;
+        }
+      }
+      .card-gabung {
+        margin-top: 20px;
+      }
+    }
     .card-artikel {
       width: 100%;
     }

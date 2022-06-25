@@ -4,9 +4,6 @@ const deskripsi = document.getElementById("deskripsi");
 
 formPertanyaan.addEventListener("submit", (e) => {
   e.preventDefault();
-
-  console.log(judulPertanyaan.value);
-  console.log(deskripsi.value);
 });
 
 $("#tambah-tags").tagsInput({

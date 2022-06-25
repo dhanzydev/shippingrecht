@@ -89,7 +89,7 @@
           margin-bottom: 10px;
           padding: 5px 10px;
           border-radius: 5px;
-          background-color: #6892ff;
+          background-color: var(--bs-primary);
           color: rgb(255, 255, 255);
           width: max-content;
           cursor: default;
@@ -122,8 +122,13 @@
     padding: 5px 10px;
     margin-right: 10px;
     margin-bottom: 10px;
+    background-color: var(--bs-primary);
+    color: rgb(255, 255, 255);
     border-radius: 5px;
-    border: 2px solid rgba(67, 106, 205, 0.85);
+    cursor: pointer;
+    &:hover {
+      background-color: #6892ff;
+    }
   }
 }
 
