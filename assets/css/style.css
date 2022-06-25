@@ -11387,39 +11387,30 @@ body {
     width: 100%;
   }
 }
-#detail-artikel {
-  padding-top: 70px;
-  padding-bottom: 80px;
-}
-#detail-artikel .container .header-article img {
+#jumbotron-detail-artikel .detail-jumbotron {
   width: 100%;
-  height: 500px;
-  object-fit: cover;
 }
-#detail-artikel .container .header-article .category-article .article-tag a {
-  background-color: rgb(201, 198, 198);
-  padding: 2px 6px;
-  color: #FFF;
+#jumbotron-detail-artikel .image-jumbotron {
+  width: 100%;
+  max-height: 60vh;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 1px 2px 15px 3px rgba(0, 0, 0, 0.125);
 }
-#detail-artikel .container .share {
-  width: 100px;
+#jumbotron-detail-artikel .image-jumbotron img {
+  height: 100%;
 }
-#detail-artikel .container .share .social-media-share a img {
-  padding-bottom: 30px;
-  width: 30px;
+#jumbotron-detail-artikel .author-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#jumbotron-detail-artikel .author-image img {
+  width: 100%;
+  height: 100%;
 }
 
-@media (max-width: 992px) {
-  #detail-artikel .container .share {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-  #detail-artikel .container .share .social-media-share a img {
-    padding-bottom: 0;
-    width: 25px;
-  }
-}
 #coming-soon {
   background-color: #436ACD;
   min-height: 95vh;
